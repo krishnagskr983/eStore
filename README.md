@@ -1,13 +1,13 @@
 # eStore
 
-eStore is e-commerce website which diplays the products and brands of different items.
+eStore is e-commerce website which displays the products and brands of different items.
 
 # Development Tools
 
-1.JavaScript
+1.HTML
 
-2.HTML
+2.CSS
 
-3.CSS
+3.JavaScript
 
 
