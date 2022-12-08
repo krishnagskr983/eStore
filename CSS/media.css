@@ -1,0 +1,275 @@
+/**************************/
+/* BELOW 1344px (desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .container {
+    max-width: 120rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (LandScape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .primary-heading {
+    font-size: 4.8rem;
+  }
+
+  .secondary-heading {
+    font-size: 4rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2.8rem;
+  }
+
+  .post-list--types {
+    gap: 3.6rem;
+  }
+
+  .fashion {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .footer-details--heading {
+    font-size: 4rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile--nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .icon-mobile--nav[name='menu-outline'] {
+    color: #fff;
+  }
+
+  .icon-mobile--nav[name='close-outline'] {
+    color: #333;
+  }
+
+  .main-nav--types {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav--types {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile--nav[name='close-outline'] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile--nav[name='menu-outline'] {
+    display: none;
+  }
+
+  .main-nav--types {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav--link:link,
+  .main-nav--link:visited {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #333;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  .title-group {
+    flex-direction: column;
+  }
+
+  .primary-heading {
+    font-size: 3.6rem;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+
+  .para-text {
+    font-size: 1.6rem;
+  }
+
+  .post-header {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .post-list--types {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+  }
+
+  .post-list--link {
+    line-height: 1.6;
+  }
+
+  .post-search--input {
+    padding: 1rem 4rem;
+    width: 32rem;
+    font-size: 1.6rem;
+  }
+
+  .title-box--img {
+    width: 75%;
+    padding: 2.4rem;
+  }
+
+  .title-box--quote {
+    padding-bottom: 0;
+  }
+
+  .title-content {
+    max-width: 100%;
+  }
+
+  .deals,
+  .fashion {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 6.4rem;
+  }
+
+  .footer-details,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .footer-details--heading {
+    font-size: 3.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+  .primary-heading {
+    font-size: 2.8rem;
+  }
+
+  .secondary-heading {
+    font-size: 3rem;
+  }
+
+  .tertiary-heading {
+    margin-bottom: 3.2rem;
+  }
+
+  .title-box {
+    grid-template-columns: 1fr 2fr;
+    gap: 1.2rem;
+  }
+
+  .title-box--img {
+    max-width: 80%;
+    padding: 1.2rem;
+  }
+
+  .deals,
+  .fashion {
+    grid-template-columns: 1fr;
+  }
+
+  .deals-figure--img {
+    width: 34rem;
+    height: 34rem;
+  }
+
+  .fashion-figure--img {
+    width: 28rem;
+    height: 36rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .cta-img--box {
+    grid-row: 1;
+  }
+
+  .grid-footer {
+    gap: 4.8rem;
+  }
+
+  .footer-details--heading {
+    font-size: 2.8rem;
+  }
+}
